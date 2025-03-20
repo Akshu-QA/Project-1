@@ -1,13 +1,13 @@
 package testCases;
 
-public class RadioButton {
+import base.Base;
 
-	public void m3() {
-		System.out.println("git hub commit from Ankit");
-	}
-	public void m4() {
-		System.out.println("git hub commit from Akshu");
-	}
+public class RadioButton extends Base {
+	public static void main(String[] args) {
 
+		openUrl();
+		close();
+
+	}
 
 }
