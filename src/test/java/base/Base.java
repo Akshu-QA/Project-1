@@ -2,20 +2,24 @@ package base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Base {
-	static WebDriver driver;
+	protected static WebDriver driver;
 
-	public static void openUrl() {
+	@BeforeTest
+	public static void openBrowser() {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
-
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+		driver.manage().window().maximize();
 	}
-	
-	public static void close() {
+
+	@AfterTest
+	public static void closeBrowser() {
 		driver.close();
 	}
 
