@@ -18,14 +18,10 @@ public class SwitchToAlertExampleTC extends Base {
 		boolean alertBtnDispalyed = p.alertButton.isDisplayed();
 
 		softAssertMethod(alertBtnDispalyed);
-
 		System.out.println("SwitchToAlertExampleTC: PASS");
 
 		boolean hidebtnDisplayed = p.hidebtn.isDisplayed();
-
 		softAssertMethod(hidebtnDisplayed);
-		
-		
 
 		boolean showBtnDisplayed = p.showbtn.isDisplayed();
 		softAssertMethod(showBtnDisplayed);
@@ -33,7 +29,6 @@ public class SwitchToAlertExampleTC extends Base {
 		boolean enterInputFielddisplayed = p.enterNameInputField.isDisplayed();
 		softAssertMethod(enterInputFielddisplayed);
 		p.enterNameInputField1.sendKeys("Test");
-		
 
 		hardWaitMethod(2000);
 		p.hidebtn.click();
