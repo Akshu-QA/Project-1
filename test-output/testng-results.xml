@@ -1,25 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="6" total="10" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-25T07:27:40Z" name="Default suite" finished-at="2025-03-25T07:27:50Z" duration-ms="9438">
+  <suite started-at="2025-03-25T10:38:10Z" name="Suite" finished-at="2025-03-25T10:38:26Z" duration-ms="15319">
     <groups>
     </groups>
-    <test started-at="2025-03-25T07:27:40Z" name="Default test" finished-at="2025-03-25T07:27:50Z" duration-ms="9438">
-      <class name="testCases.SwitchToAlertExampleTC">
-        <test-method is-config="true" signature="openBrowser()[pri:0, instance:testCases.SwitchToAlertExampleTC@7b420819]" started-at="2025-03-25T07:27:40Z" name="openBrowser" finished-at="2025-03-25T07:27:45Z" duration-ms="4922" status="PASS">
+    <test started-at="2025-03-25T10:38:10Z" name="Test" finished-at="2025-03-25T10:38:26Z" duration-ms="15319">
+      <class name="testCases.CheckboxExampleTC">
+        <test-method signature="checkboxExample()[pri:3, instance:testCases.CheckboxExampleTC@4722ef0c]" started-at="2025-03-25T10:38:19Z" name="checkboxExample" finished-at="2025-03-25T10:38:21Z" duration-ms="2390" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkboxExample -->
+      </class> <!-- testCases.CheckboxExampleTC -->
+      <class name="testCases.SuggessionClassExampleTC">
+        <test-method signature="SuggessionClassExample()[pri:2, instance:testCases.SuggessionClassExampleTC@5b38c1ec]" started-at="2025-03-25T10:38:18Z" name="SuggessionClassExample" finished-at="2025-03-25T10:38:19Z" duration-ms="890" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SuggessionClassExample -->
+      </class> <!-- testCases.SuggessionClassExampleTC -->
+      <class name="testCases.RadioButtonTC">
+        <test-method signature="radioButtonExample()[pri:1, instance:testCases.RadioButtonTC@338fc1d8]" started-at="2025-03-25T10:38:17Z" name="radioButtonExample" finished-at="2025-03-25T10:38:18Z" duration-ms="934" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- radioButtonExample -->
+      </class> <!-- testCases.RadioButtonTC -->
+      <class name="testCases.ElementDisplayedExampleTC">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:testCases.ElementDisplayedExampleTC@15a34df2]" started-at="2025-03-25T10:38:10Z" name="openBrowser" finished-at="2025-03-25T10:38:17Z" duration-ms="6282" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-        <test-method signature="switchToAlertExample()[pri:4, instance:testCases.SwitchToAlertExampleTC@7b420819]" started-at="2025-03-25T07:27:45Z" name="switchToAlertExample" finished-at="2025-03-25T07:27:49Z" duration-ms="4332" status="PASS">
+        <test-method signature="switchToAlertExample()[pri:4, instance:testCases.ElementDisplayedExampleTC@15a34df2]" started-at="2025-03-25T10:38:21Z" name="switchToAlertExample" finished-at="2025-03-25T10:38:25Z" duration-ms="4430" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- switchToAlertExample -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.SwitchToAlertExampleTC@7b420819]" started-at="2025-03-25T07:27:49Z" name="closeBrowser" finished-at="2025-03-25T07:27:50Z" duration-ms="164" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.ElementDisplayedExampleTC@15a34df2]" started-at="2025-03-25T10:38:25Z" name="closeBrowser" finished-at="2025-03-25T10:38:26Z" duration-ms="304" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- testCases.SwitchToAlertExampleTC -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- testCases.ElementDisplayedExampleTC -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

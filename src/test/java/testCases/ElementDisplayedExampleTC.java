@@ -9,16 +9,12 @@ import org.testng.asserts.SoftAssert;
 import base.Base;
 import base.PageObject_s;
 
-public class SwitchToAlertExampleTC extends Base {
+public class ElementDisplayedExampleTC extends Base {
 
 	@Test(priority = 4)
 	public void switchToAlertExample() throws InterruptedException {
 
 		PageObject_s p = PageFactory.initElements(driver, PageObject_s.class);
-		boolean alertBtnDispalyed = p.alertButton.isDisplayed();
-
-		softAssertMethod(alertBtnDispalyed);
-		System.out.println("SwitchToAlertExampleTC: PASS");
 
 		boolean hidebtnDisplayed = p.hidebtn.isDisplayed();
 		softAssertMethod(hidebtnDisplayed);
@@ -26,13 +22,15 @@ public class SwitchToAlertExampleTC extends Base {
 		boolean showBtnDisplayed = p.showbtn.isDisplayed();
 		softAssertMethod(showBtnDisplayed);
 
-		boolean enterInputFielddisplayed = p.enterNameInputField.isDisplayed();
-		softAssertMethod(enterInputFielddisplayed);
-		p.enterNameInputField1.sendKeys("Test");
+		boolean hideShowExField = p.hideShowExampleInputField.isDisplayed();
+		softAssertMethod(hideShowExField);
 
 		hardWaitMethod(2000);
 		p.hidebtn.click();
 		hardWaitMethod(2000);
+		p.showbtn.click();
+
+		System.out.println("ElementDisplayedExampleTC: PASS");
 
 	}
 

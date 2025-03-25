@@ -42,17 +42,15 @@ public class PageObject_s {
 
 	@FindBy(xpath = "//input[@name='enter-name']")
 	public WebElement enterNameInputField;
-	
+
 	// Element displayed example
-	@FindBy(css="input[id='hide-textbox']")
+	@FindBy(css = "input[id='hide-textbox']")
 	public WebElement hidebtn;
-	
-	@FindBy(css="input[id='show-textbox']")
+
+	@FindBy(css = "input[id='show-textbox']")
 	public WebElement showbtn;
-	
-	@FindBy(css="input[id='displayed-text']")
-	public WebElement enterNameInputField1;
-	
-	
+
+	@FindBy(css = "input[id='displayed-text']")
+	public WebElement hideShowExampleInputField;
 
 }
