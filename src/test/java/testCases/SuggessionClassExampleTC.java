@@ -25,6 +25,7 @@ public class SuggessionClassExampleTC extends Base {
 				ref.click();
 			}
 		}
+		System.out.println("SuggessionClassExampleTC : PASS");
 
 	}
 

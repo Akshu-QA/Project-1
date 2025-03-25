@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -107,7 +107,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.CheckboxExampleTC" class="method navigator-link" hash-for-method="checkboxExample">checkboxExample</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testCases.RadioButtonTC" class="method navigator-link" hash-for-method="radioButtonExample">radioButtonExample</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.SwitchToAlertExampleTC" class="method navigator-link" hash-for-method="switchToAlertExample">switchToAlertExample</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -133,6 +143,36 @@
                   <a name="radioButtonExample">
                   </a> <!-- radioButtonExample -->
                   <span class="method-name">radioButtonExample</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.SwitchToAlertExampleTC</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="switchToAlertExample">
+                  </a> <!-- switchToAlertExample -->
+                  <span class="method-name">switchToAlertExample</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.CheckboxExampleTC</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkboxExample">
+                  </a> <!-- checkboxExample -->
+                  <span class="method-name">checkboxExample</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -166,6 +206,8 @@
     &lt;classes&gt;
       &lt;class name=&quot;testCases.SuggessionClassExampleTC&quot;/&gt;
       &lt;class name=&quot;testCases.RadioButtonTC&quot;/&gt;
+      &lt;class name=&quot;testCases.CheckboxExampleTC&quot;/&gt;
+      &lt;class name=&quot;testCases.SwitchToAlertExampleTC&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -179,7 +221,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -205,20 +247,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'SuggessionClassExample')
-data.setCell(0, 2, 'testCases.SuggessionClassExampleTC')
-data.setCell(0, 3, 765);
+data.setCell(0, 1, 'checkboxExample')
+data.setCell(0, 2, 'testCases.CheckboxExampleTC')
+data.setCell(0, 3, 2309);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'radioButtonExample')
 data.setCell(1, 2, 'testCases.RadioButtonTC')
-data.setCell(1, 3, 574);
+data.setCell(1, 3, 816);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'SuggessionClassExample')
+data.setCell(2, 2, 'testCases.SuggessionClassExampleTC')
+data.setCell(2, 3, 790);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'switchToAlertExample')
+data.setCell(3, 2, 'testCases.SwitchToAlertExampleTC')
+data.setCell(3, 3, 46);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -233,11 +283,29 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">6 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">testCases.RadioButtonTC</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">openBrowser</span>
+                <br/>
+                <span class="ignored-method-name">closeBrowser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.SwitchToAlertExampleTC</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">openBrowser</span>
+                <br/>
+                <span class="ignored-method-name">closeBrowser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">testCases.CheckboxExampleTC</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">openBrowser</span>
                 <br/>
@@ -263,18 +331,35 @@ return data;
               <div class="chronological-class-name">testCases.RadioButtonTC</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">radioButtonExample</span>
-                <span class="method-start">4549 ms</span>
+                <span class="method-start">5475 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.SuggessionClassExampleTC</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">SuggessionClassExample</span>
-                <span class="method-start">5127 ms</span>
+                <span class="method-start">6299 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.CheckboxExampleTC</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkboxExample</span>
+                <span class="method-start">7091 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.SwitchToAlertExampleTC</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">switchToAlertExample</span>
+                <span class="method-start">9401 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.SuggessionClassExampleTC</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">5893 ms</span>
+                <span class="method-start">9448 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

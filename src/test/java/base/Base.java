@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.asserts.SoftAssert;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -36,6 +37,20 @@ public class Base {
 
 	public void implicitWaitMethod(int timeValue) {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(timeValue));
+	}
+
+	public void hardWaitMethod(int timeWait) throws InterruptedException {
+		Thread.sleep(timeWait);
+	}
+
+	public void clickMethod(WebElement ele) {
+		ele.click();
+	}
+
+	public void softAssertMethod(boolean ele1) {
+		SoftAssert sa = new SoftAssert();
+		sa.assertEquals(ele1, true);
+		sa.assertAll();
 	}
 
 //	public void forLoopForAllElements(String allOptionsSuggestionClass) {

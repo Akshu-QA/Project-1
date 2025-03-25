@@ -23,4 +23,24 @@ public class PageObject_s {
 	@FindBy(xpath = "//div[@class='ui-menu-item-wrapper']")
 	public List<WebElement> allOptionsSuggestionClass;
 
+	// checkbox class elements loc
+	@FindBy(xpath = "//input[@id='checkBoxOption1']")
+	public WebElement chechboxOption1;
+
+	@FindBy(css = "input[id='checkBoxOption2']")
+	public WebElement chechboxOption2;
+
+	@FindBy(xpath = "//div[@id='checkbox-example']")
+	public List<WebElement> allCheckBoxOptions;
+
+	// Alert class elements loc
+	@FindBy(xpath = "//input[@id='alertbtn']")
+	public WebElement alertButton;
+
+	@FindBy(xpath = "")
+	public WebElement confirmButton;
+
+	@FindBy(xpath = "")
+	public WebElement enterNameInputField;
+
 }
