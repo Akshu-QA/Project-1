@@ -52,5 +52,47 @@ public class PageObject_s {
 
 	@FindBy(css = "input[id='displayed-text']")
 	public WebElement hideShowExampleInputField;
+	
+	//SwitchTabExample
+	@FindBy(xpath ="//a[@id='opentab']")
+	public WebElement openTab;
+	
+	//Switch Window Example 
+	@FindBy(xpath ="//button[@id='openwindow']")
+	public WebElement openWindow;
+	
+	//Switch To alert example
+	@FindBy(xpath ="//input[@id='alertbtn']")
+	public WebElement alertBtn;
+	
+	@FindBy(xpath = "//input[@id='confirmbtn']")
+	public WebElement confirmBtn;
+	
+	@FindBy(xpath = "//input[@id='name']")
+	public WebElement enterYourname;
+	
+	//mouseHover
+	@FindBy(xpath = "//button[@id='mousehover']")
+	public WebElement mouseHover;
+	
+	@FindBy(xpath =  "//a[text()='Top']")
+	public WebElement topButton;
+	
+	@FindBy(xpath = "//a[text()='Reload']")
+	public WebElement reloadButton;
+	
+	//Web Table Example 
+	@FindBy(xpath = "//table[@class='table-display']")
+	 public List<WebElement>  webTableExample;
+	
+	//WebTable Fixed Header
+	@FindBy(xpath = "//div[@class='tableFixHead']")
+	public List<WebElement> webTableFixHeader;
+	
+	
+	
+	
+	
+	
 
 }
