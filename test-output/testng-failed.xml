@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="grp1"/>
+      </run>
+    </groups>
     <classes>
-      <class name="testCases.SwitchToAlertExampleTC">
+      <class name="testCases.SuggessionClassExampleTC">
         <methods>
-          <include name="openBrowser"/>
-          <include name="switchToAlertExample"/>
-          <include name="closeBrowser"/>
+          <include name="SuggessionClassExample"/>
         </methods>
-      </class> <!-- testCases.SwitchToAlertExampleTC -->
+      </class> <!-- testCases.SuggessionClassExampleTC -->
+      <class name="testCases.CheckboxExampleTC">
+        <methods>
+          <include name="checkboxExample"/>
+        </methods>
+      </class> <!-- testCases.CheckboxExampleTC -->
+      <class name="testCases.RadioButtonTC">
+        <methods>
+          <include name="radioButtonExample"/>
+        </methods>
+      </class> <!-- testCases.RadioButtonTC -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

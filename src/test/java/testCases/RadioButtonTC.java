@@ -10,7 +10,7 @@ import base.PageObject_s;
 
 public class RadioButtonTC extends Base {
 
-	@Test(priority = 1)
+	@Test( groups = {"grp1"})
 	public void radioButtonExample() {
 
 		PageObject_s p = PageFactory.initElements(driver, PageObject_s.class);

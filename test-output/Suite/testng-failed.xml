@@ -2,14 +2,27 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <include name="grp1"/>
+      </run>
+    </groups>
     <classes>
       <class name="testCases.SuggessionClassExampleTC">
         <methods>
-          <include name="openBrowser"/>
           <include name="SuggessionClassExample"/>
-          <include name="closeBrowser"/>
         </methods>
       </class> <!-- testCases.SuggessionClassExampleTC -->
+      <class name="testCases.CheckboxExampleTC">
+        <methods>
+          <include name="checkboxExample"/>
+        </methods>
+      </class> <!-- testCases.CheckboxExampleTC -->
+      <class name="testCases.RadioButtonTC">
+        <methods>
+          <include name="radioButtonExample"/>
+        </methods>
+      </class> <!-- testCases.RadioButtonTC -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

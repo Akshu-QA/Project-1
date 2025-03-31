@@ -14,7 +14,7 @@ import base.PageObject_s;
 
 public class SuggessionClassExampleTC extends Base {
 
-	@Test(priority = 2)
+	@Test(groups = { "grp1" })
 	public void SuggessionClassExample() {
 		PageObject_s p = PageFactory.initElements(driver, PageObject_s.class);
 		implicitWaitMethod(5);
