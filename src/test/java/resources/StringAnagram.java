@@ -3,7 +3,7 @@ package resources;
 public class StringAnagram {
 
 	public static void main(String[] args) {
-		String s = "abcbcd";
+		String s = "abcdcba";
 		String rev = ""; 
 
 		for (int i = s.length() - 1; i >= 0; i--) {

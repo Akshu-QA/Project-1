@@ -53,6 +53,7 @@ public class PageObject_s {
 	@FindBy(css = "input[id='displayed-text']")
 	public WebElement hideShowExampleInputField;
 	
+
 	//SwitchTabExample
 	@FindBy(xpath ="//a[@id='opentab']")
 	public WebElement openTab;
@@ -89,10 +90,45 @@ public class PageObject_s {
 	@FindBy(xpath = "//div[@class='tableFixHead']")
 	public List<WebElement> webTableFixHeader;
 	
+	//i frame
+	@FindBy(css="iframe[id='courses-iframe']")
+	public WebElement iFrame;
+	
+	//youtube visible
+	@FindBy(css="span[class='fa fa-youtube']")
+	public WebElement youTubeIcon;
+	
+	//linkdin icon visible
+	@FindBy(css="span[class='fa fa-linkedin']")
+	public WebElement linkdinIcon;
+	
+	//Register button
+	@FindBy(xpath= "//a[text()='Register']")
+	public WebElement registorButton ;
+	
+	// Login Button
+	@FindBy(xpath="//a[@class='theme-btn register-btn']")
+	public WebElement loginButton;
+	
+	//Courses link display
+	@FindBy(xpath="//a[text()='Courses']")
+	public WebElement coursesLink;
+	
+	//
 	
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
 	
 
 }
