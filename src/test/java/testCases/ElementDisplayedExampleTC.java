@@ -11,7 +11,7 @@ import base.PageObject_s;
 
 public class ElementDisplayedExampleTC extends Base {
 
-	@Test(priority = 4)
+	@Test(groups = {"grp2"})
 	public void switchToAlertExample() throws InterruptedException {
 
 		PageObject_s p = PageFactory.initElements(driver, PageObject_s.class);

@@ -11,7 +11,7 @@ import base.PageObject_s;
 
 public class CheckboxExampleTC extends Base {
 
-	@Test(priority = 3)
+	@Test(priority = 1)
 	public void checkboxExample() throws InterruptedException {
 
 		PageObject_s p = PageFactory.initElements(driver, PageObject_s.class);
