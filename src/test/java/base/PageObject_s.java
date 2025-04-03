@@ -111,10 +111,111 @@ public class PageObject_s {
 	public WebElement loginButton;
 	
 	//Courses link display
-	@FindBy(xpath="//a[text()='Courses']")
+	@FindBy(xpath="(//ul[@class='navigation clearfix']//a[contains(text(),'Courses')])[1]")
 	public WebElement coursesLink;
 	
-	//
+	//All Access plan
+	@FindBy(xpath="(//ul[@class='navigation clearfix']//a[contains(text(),'All Access plan')])[1]")
+	public WebElement allAccessPlanLink;
+	
+	//Learning Paths link
+	@FindBy(xpath="(//ul[@class='navigation clearfix']//a[contains(text(),'Learning paths')])[1]")
+	public WebElement learningPathsLink ;
+	
+	//Mentorship link
+	@FindBy(xpath="(//ul[@class='navigation clearfix']//a[contains(text(),'Mentorship')])[1]")
+	public WebElement mentorshipLink ;
+	
+	//job suppport link
+	@FindBy(xpath="(//ul[@class='navigation clearfix']//a[contains(text(),'Mentorship')])[1]")
+	public WebElement jobSupport ;
+	
+	
+	//practice link 
+	@FindBy(xpath="(//ul[@class='navigation clearfix']//a[contains(text(),'Practice')])[1]")
+	public WebElement practicelink ;
+	
+	//Blog link 
+	@FindBy(xpath="(//ul[@class='navigation clearfix']//a[contains(text(),'Blog')])[1]")
+	public WebElement blogLink ;
+	
+	//more dropdown
+	@FindBy(xpath="//li[@class='dropdown open']")
+	public WebElement dropDown;
+	
+	//Discount coupon link
+	
+	@FindBy(xpath="//a[text()='Discount Coupons']")
+	public WebElement discountCouponLink;
+	
+	// restApi link
+	@FindBy(xpath="//a[text()='REST API']")
+	public WebElement restAPILink;
+	
+	//Soap UI link
+	@FindBy(xpath="//a[text()='SoapUI']")
+	public WebElement soapUILink;
+	
+	//Appium link
+	@FindBy(xpath="//a[text()='Appium']")
+	public WebElement appiumLink;
+	
+	//j meter link 
+	@FindBy(xpath="//a[text()='JMeter']")
+	public WebElement jMeterLink;
+	
+	// latestNews link
+	@FindBy(xpath="//a[text()='Latest News']")
+	public WebElement latestnewsLink;
+	
+	//BrokenLiknk
+	@FindBy(xpath="//a[text()='Broken Link']")
+	public WebElement brokenLink;
+	
+	//dummy content for testing
+	@FindBy(xpath="//a[text()='Dummy Content for Testing.']")
+	public WebElement dummyContentForTesting;
+	
+	//content info link 
+	@FindBy(xpath="//a[text()='Contact info']")
+	public WebElement contentTestingLink;
+	
+	@FindBy(xpath="//a[text()='Dummy Content for Testing.']")
+	public WebElement dummyContentForTesting2;
+	
+	//SocialMedia link 
+	@FindBy(xpath="//a[text()='Social Media']")
+	public WebElement socialMediaLink;
+	
+	//Facebook link 
+	@FindBy(xpath="//a[text()='Facebook']")
+	public WebElement facebookLink;
+	
+	//twitter link 
+	@FindBy(xpath="//a[text()='Twitter']")
+	public WebElement twitterLink;
+	
+	//google+ link
+	@FindBy(xpath="//a[text()='Google+']")
+	public WebElement googleLink;
+	
+	//Youtube link
+	@FindBy(xpath="//a[text()='Youtube']")
+	public WebElement youTubeLink;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
