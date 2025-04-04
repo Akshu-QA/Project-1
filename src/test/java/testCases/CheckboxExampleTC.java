@@ -8,7 +8,6 @@ import org.testng.annotations.Test;
 import base.Base;
 import base.PageObject_s;
 
-
 public class CheckboxExampleTC extends Base {
 
 	@Test(priority = 1)
